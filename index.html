@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4154a3d196.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/drone2.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">simulation</a></li>
+                <li><a href="#portfolio">contacts</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Fly Beyond Limits</p>
+            <h1> Virtual <span>Drone</span><br>Telemetry Interface</h1>
+        </div>
+    </div>
+ </div>   
+<!------About---------><div id="about">
+    <div class="container">
+        <div class="row">
+         <div class="about-col-1">
+             <div class="tenor-gif-embed" data-postid="25942421" data-share-method="host" data-aspect-ratio="1.77778" data-width="100%">
+                 <a href="https://tenor.com/view/delivery-gif-25942421">Delivery GIF</a>from 
+                 <a href="https://tenor.com/search/delivery-gifs">Delivery GIFs</a>
+             </div>
+             <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+         </div>
+         <div class="about-col-2">
+             <h1 class="sub-title">Drone Technology</h1>
+             <p>A drone refers to an aerial vehicle that receives remote commands from a pilot or relies on software for autonomous flight. Many drones display features like cameras for collecting visual data and propellers for stabilizing their flight patterns.</p>
+                 <div class="tab-titles">
+                     <p class="tab-links active-link" onclick="opentab('speed')">Speed</p>
+                     <p class="tab-links" onclick="opentab('oreintation')">Orientation</p>
+                     <p class="tab-links" onclick="opentab('direction')">Direction</p>
+                 </div>
+                 <div class="tab-contents active-tab" id="speed">
+                     <ul>
+                         <li><span>200km/hr</span><br>Maximum speed</li>
+                         <li><span>120km/hr</span><br>Cruising speed</li>
+                         <li><span>50km/hr</span><br>Delivery speed</li>
+                     </ul>
+                 </div>
+                 <div class="tab-contents" id="oreintation">
+                     <ul>
+                         <li><span>Gyroscope</span><br>Stabilization</li>
+                         <li><span>Accelerometer</span><br>Tilt detection</li>
+                         <li><span>Magnetometer</span><br>Compass orientation</li>
+                     </ul>
+                 </div>
+                 <div class="tab-contents" id="direction">
+                     <ul>
+                         <li><span>X axis</span><br>Left/Right movement</li>
+                         <li><span>Y axis</span><br>Forward/Backward</li>
+                         <li><span>Z axis</span><br>Up/Down</li>
+                     </ul>
+                 </div>
+         </div>
+        </div>
+     </div>
+ </div>
+ 
+<!-----------services-------->
+<div class="services">
+    <div class="container">
+        <h1 class="sub-title" >System Categorization</h1>
+        <div class="services-list">
+           <div>
+            <i class="fa-solid fa-battery-three-quarters"></i>
+            <h2>Drone Battery Insights</h2>
+            <p>The battery is a crucial component in drones, as it powers all the essential systems including the motors, flight controller, sensors, GPS module, and communication interfaces. Most drones today use Lithium Polymer (Li-Po) batteries due to their lightweight nature and high discharge rates.</p>
+                <a href="#">Learn more</a>
+           </div> 
+           <div>
+            <i class="fa-solid fa-tower-cell"></i>
+            <h2>Radio Communication</h2>
+            <p>Drones rely on radio transmission and receiver systems for seamless communication between the drone and the ground control station.wireless transfer of both control commands and telemetry data done by transmitter and reciever.</p>
+                <a href="#">Learn more</a>
+           </div> 
+           <div>
+            <i class="fa-solid fa-jet-fighter"></i>
+            <h2>Autopilot</h2>
+            <p>The Flight Controller (FC) is the central processing unit.It acts as the brain of the system, responsible for managing all aspects of flight, including stabilization, navigation, orientation</p>
+                <a href="#">Learn more</a>
+           </div> 
+        </div>
+    </div>
+</div>
+<!--------porfolio------------------------>
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title" >Wiggle in the Wind</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="images/Pitch.jpg">
+            <div class="layer">
+                <h3>PITCH</h3>
+                <p> I want to move the drone forward. then I will slow down the front propeller speed while the rear propellers speed up. This will cause pitch motion</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/Roll.jpg">
+            <div class="layer">
+                <h3>ROLL</h3>
+                <p>rotation of the drone around its longitudinal axis, which runs from the front to the back of the drone,this movement is carried out by creating an imbalanced lift force</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/Yaw.jpg">
+            <div class="layer">
+                <h3>YAW</h3>
+                <p>rotation of the drone around its vertical axis. When the drone turns left or right without changing its tilt (pitch or roll), that’s yaw movement.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+    <a href="images/vp_recr-yr2.pdf" class="btncv">Download CV</a>
+  </div>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+     
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");   
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");   
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right=0;
+
+    }
+    function closemenu(){
+        sidemenu.style.right=-200px;
+        
+    }
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
