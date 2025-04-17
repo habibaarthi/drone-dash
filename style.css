@@ -258,6 +258,8 @@ nav ul li a:hover::after{
 
 }
 .btncv{
+    margin-top: 50px;
+    margin-left: 200px;
     display: block;
     width: fit-content;
     border: 1px solid #ff004f;
@@ -270,5 +272,4 @@ nav ul li a:hover::after{
 .btncv:hover{
     background: #ff004f;
 
-    
 }
